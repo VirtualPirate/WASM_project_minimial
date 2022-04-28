@@ -1,0 +1,15 @@
+{
+  "name": "wasm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cmake-build": "cd build && emcmake cmake -G \"Unix Makefiles\" ../cpp",
+    "compile-wasm": "cd build && make",
+    "setup": "npm run cmake-build && npm run compile-wasm"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
